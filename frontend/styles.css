@@ -1,0 +1,96 @@
+html, body {
+    height: 100%; /* Garante que o body ocupe toda a altura da tela */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('images/fundo_site.jpg'); /* Caminho da sua imagem */
+    background-size: cover; /* A imagem cobre toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Não repete a imagem */
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distribui os elementos nas extremidades */
+    padding: 40px 30px;
+}
+
+/* Seção que agrupa logo e navegação à esquerda */
+.left-section {
+    display: flex;
+    align-items: center;
+}
+
+/* Logo */
+.logo img {
+    height: 50px;
+    margin-right: 110px; /* Dá um espaço entre a logo e a barra de navegação */
+}
+
+/* Barra de navegação */
+.nav-container {
+    background-color: #333;
+    padding: 13px 30px;
+    border-radius: 34px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 70px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff0000;
+}
+
+/********** Botões **************/
+.buttons {
+    display: flex;
+    gap: 40px;
+    margin-right: 220px; /* Afasta os botões do canto direito */
+    width: auto;
+}
+
+/* Estilização dos botões */
+button {
+    padding: 10px 1px;
+    border: none;
+    border-radius: 13px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 150px; /* Define uma largura fixa para ambos os botões */
+}
+
+/* Botão Sign Up - fundo vermelho */
+.sign-up {
+    background-color: red;
+    color: white;
+    border: none;
+}
+
+/* Botão Custom Request - fundo preto, borda vermelha */
+.custom-request {
+    background-color: black;
+    color: white;
+    border: 2px solid red;
+}
