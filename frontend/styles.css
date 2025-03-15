@@ -1,22 +1,24 @@
 html, body {
-    height: 100%; /* Garante que o body ocupe toda a altura da tela */
+    height: 100%;
     margin: 0;
     padding: 0;
 }
 
 body {
-    background-image: url('images/fundo_site.jpg'); /* Caminho da sua imagem */
-    background-size: cover; /* A imagem cobre toda a tela */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: no-repeat; /* Não repete a imagem */
+    background-image: url('images/fundo_site.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: white;
     font-family: Arial, sans-serif;
+    
 }
 
+/********** Cabeçalho **************/
 header {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Distribui os elementos nas extremidades */
+    justify-content: space-between;
     padding: 40px 30px;
 }
 
@@ -28,8 +30,8 @@ header {
 
 /* Logo */
 .logo img {
-    height: 50px;
-    margin-right: 110px; /* Dá um espaço entre a logo e a barra de navegação */
+    height: 65px;
+    margin-right: 110px;
 }
 
 /* Barra de navegação */
@@ -59,14 +61,16 @@ header {
 }
 
 .nav-links a:hover {
-    color: #ff0000;
+    text-decoration: underline;
+    text-decoration-color: red;
 }
 
-/********** Botões **************/
+
+/********** Botões do cabeçalho **************/
 .buttons {
     display: flex;
     gap: 40px;
-    margin-right: 220px; /* Afasta os botões do canto direito */
+    margin-right: 220px;
     width: auto;
 }
 
@@ -78,19 +82,110 @@ button {
     font-size: 16px;
     cursor: pointer;
     font-weight: bold;
-    width: 150px; /* Define uma largura fixa para ambos os botões */
+    width: 150px;
 }
 
-/* Botão Sign Up - fundo vermelho */
 .sign-up {
     background-color: red;
     color: white;
     border: none;
 }
 
-/* Botão Custom Request - fundo preto, borda vermelha */
 .custom-request {
     background-color: black;
     color: white;
     border: 2px solid red;
+}
+
+.sign-up:hover {
+    background-color: rgb(78, 0, 0);
+}
+
+.custom-request:hover {
+    background-color: rgb(78, 0, 0);
+    color: white;
+    border-color:rgb(78, 0, 0) ;
+}
+
+/********** Corpo da Página Inicial (Home) **************/
+/* Garante que a seção ocupe toda a tela */
+.home-content {
+    height: 60vh; /* Ocupa 100% da altura da tela */
+    display: flex;
+    justify-content: flex-start; /* Alinha o conteúdo à esquerda */
+    align-items: center; /* Centraliza verticalmente */
+    padding-left: 90px; /* Adiciona um pequeno espaço da borda esquerda */
+}
+
+/* Texto médio */
+.medium-text {
+    font-size: 35px;
+    color: white;
+    margin-bottom: 5px; /* Menor espaçamento entre os parágrafos */
+}
+
+/* Texto grande */
+.large-text {
+    font-size: 100px;
+    color: red;
+    font-weight: bold;
+    margin-bottom: 5px; /* Menor espaçamento entre os parágrafos */
+    margin-top: 0; /* Ajusta o topo */
+}
+
+/* Texto pequeno */
+.small-text {
+    font-size: 16px;
+    color: white;
+    max-width: 400px; /* Mantém o texto com uma largura confortável */
+    line-height: 1.5;
+    margin-top: 5px; /* Ajusta o topo para aproximar mais */
+    margin-bottom: 50px;
+}
+
+
+/* Botões */
+.text-buttons {
+    display: flex;
+    gap: 40px;
+    margin-right: 220px;
+    width: auto;
+}
+
+.new-arrivals{
+    background-color: red;
+    color: white;
+    border: none;
+}
+
+.best-setups {
+    background-color: black;
+    color: white;
+    border: 2px solid red;
+}
+
+.new-arrivals:hover {
+    background-color: rgb(78, 0, 0);
+}
+
+.best-setups:hover {
+    background-color: rgb(78, 0, 0);
+    color: white;
+    border-color:rgb(78, 0, 0) ;
+}
+
+/* Imagem à direita */
+.image-container {
+    width: 45%; /* Imagem ocupa a outra parte da tela */
+    display: flex;
+    justify-content: center; /* Centraliza a imagem dentro do container */
+    position: relative;
+    right: -320px; /* Move a imagem mais para a margem direita */
+    bottom: -50px;
+}
+
+.right-image {
+    width: 100%; /* Ajusta a imagem para ocupar toda a largura disponível */
+    object-fit: cover; /* Mantém a proporção da imagem sem distorção */
+    height: 100%; /* Ajusta a altura para ocupar toda a área do container */
 }
